@@ -27,8 +27,8 @@ function moveCharacter(){
     character.style.left= x + 'px'
     character.style.bottom= y + 'px'
 }
-setInterval(moveCharacter, 1)
-/*    if(direction === 'west') {
+setInterval(function(){
+    if(direction === 'west') {
         x= x-1
     }
     //character moves up
@@ -46,8 +46,7 @@ setInterval(moveCharacter, 1)
     character.style.left= x + 'px'
     character.style.bottom= y + 'px'
     
-}
-setInterval(moveCharacter, 1)
+}, 1)
 
 document.addEventListener('keydown', function(e){
     if(e.repeat) return;
@@ -70,7 +69,7 @@ document.addEventListener('keyup', function(e){
     direction=null
 })
 
-move(character).to(100, 250)*/
+/*move(character).to(100, 250)*/
 
 
 move(newImage('assets/tree.png')).to(200, 450)
